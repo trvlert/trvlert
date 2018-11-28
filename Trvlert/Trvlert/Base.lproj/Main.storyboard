@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tan-AK-RUK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6hZ-HH-TXz">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -107,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B57-fD-b9b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1893" y="28"/>
+            <point key="canvasLocation" x="1833" y="23"/>
         </scene>
         <!--Third View-->
         <scene sceneID="g9q-2w-1Ka">
@@ -134,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wSI-L8-EH3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3000.8000000000002" y="26.600985221674879"/>
+            <point key="canvasLocation" x="2790" y="23"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7aa-JR-9CT">
@@ -152,7 +152,34 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nHV-Fh-BZf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-30" y="23"/>
+            <point key="canvasLocation" x="26" y="23"/>
+        </scene>
+        <!--Splash Screen-->
+        <scene sceneID="jds-ZX-ZKt">
+            <objects>
+                <viewController id="6hZ-HH-TXz" customClass="SplashScreen" customModule="Trvlert" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DcD-XG-RS6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TRVLERT" translatesAutoresizingMaskIntoConstraints="NO" id="TZQ-Rv-oQL">
+                                <rect key="frame" x="0.0" y="219" width="375" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Xiv-Te-OFk"/>
+                    </view>
+                    <connections>
+                        <segue destination="tan-AK-RUK" kind="show" identifier="showSplashScreenSegue" id="HJm-dH-MHC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SS6-Ij-OUZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-838" y="23"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TRVLERT" width="5000" height="5000"/>
+    </resources>
 </document>
